@@ -19,7 +19,7 @@ body {
     margin: 10px;
     font-family: "Inter", serif;
     height: 100%;
-    width: 95vw;
+    width: 90vw;
 }
 
 #menuIcon {
@@ -221,17 +221,16 @@ fieldset {
     padding: 5px;
     border-radius: 10px;
     border: 1px solid var(--grey);
+    overflow: scroll;
 }
 
 fieldset p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0px;
     padding: 10px;
     font-size: 1.1em;
     text-align: justify;
-    height: 8em;
-    overflow: scroll;
+    height: 7em;
+    
 }
 
 .sketch {
