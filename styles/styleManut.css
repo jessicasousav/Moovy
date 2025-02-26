@@ -48,6 +48,7 @@ p {
 }
 
 a {
+    text-decoration: none;
     padding: 5px;
     font-size: 1.1em;
     background-color: var(--pink);
@@ -58,4 +59,7 @@ a {
     margin: 15px;
     color: var(--white);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
