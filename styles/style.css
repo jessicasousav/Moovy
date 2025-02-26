@@ -11,8 +11,11 @@
     --grey: #49454F;
 }
 
+html {
+    background-color: var(--dark-grey);
+}
 
-body, html {
+body {
     background-color: var(--dark-grey);
     color: var(--white);
     padding: 10px;

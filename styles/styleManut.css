@@ -12,6 +12,10 @@
     --grey: #49454F;
 }
 
+html {
+    background-color: var(--dark-grey);
+}
+
 body {
     height: 95vh;
     width: 90vw;
