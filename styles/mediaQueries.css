@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    :root{
+        --pink: #D34F73;
+        --dark-grey: #1E1E1E;
+        --blue: #6987C9;
+        --white: #D9D9D9;
+        --dark-blue: #153B50;
+        --grey: #49454F;
+    }
+    
+    
+    header {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 15px;
+    }
+
+    h2 {
+        text-align: center;
+        width: 25vw;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+    
+    menu {
+        display: none;
+        border-radius: 0px;
+        background-color: transparent;
+        width: 90vw;
+        position: relative;
+        z-index: 0;
+        left: auto;
+        top: auto;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 0px;
+    }
+    
+    menu ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    menu a {
+        display: flex;
+        background-color: transparent;
+        color: var(--white);
+        border-bottom: none;
+        }
+    
+    a:hover {
+        color: var(--pink);
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    #subscribeMenu {
+        background-color: var(--pink);
+        border-radius: 40px;
+        padding: 10px 20px;
+    }
+
+    .phrases {
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 1.2em;
+    }
+
+    fieldset p {
+        width: 60vw;
+    }
+
+    #phrase4 {
+        margin: 30px 0px ;
+    }
+
+    .systemMovies {
+        width: 540px;
+        margin: 0px;
+        margin-bottom: 40px;
+        
+    }
+    
+    .movieBottom {
+        height: 350px;
+
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-70px * 9));
+        }
+    }
+}

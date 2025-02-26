@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/src/favicon/site.webmanifest">
+
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +19,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower" rel="stylesheet">
+
     <!-- icones -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaQueries.css">
 
     <title>Tela Inicial</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <span class="material-symbols-outlined" id="menuIcon">menu</span>
+        <span class="material-symbols-outlined" id="menuIcon" onclick="clickMenu()">menu</span>
+        <menu class="menu-hamburger" id="itens">
+            <ul>
+                <li><a href="telaInicial.html">Início</a></li>
+                <li><a href="/manutencao.html" id="loginMenu">Fazer Login</a></li>
+                <li><a href="/manutencao.html" id="subscribeMenu">Cadastrar-se</a></li>
+            </ul>
+        </menu>
         <div class="title">
             <h1>MOOVY</h1>
             <h2>Ranqueie os seus filmes assistidos</h2>
@@ -80,57 +98,95 @@
 
             <p class="phrases" id="phrase2">E nunca mais se esqueça do que achou deles!</p>
 
-            <a href="#" class="buttons" id="subscribe1">CADASTRAR-SE AGORA</a>
+            <a href="/manutencao.html" class="buttons" id="subscribe1">CADASTRAR-SE AGORA</a>
             <p>Já tem uma conta?</p>
-            <a href="#" class="buttons" id="login">Fazer Login</a>
+            <a href="/manutencao.html" class="buttons" id="login">Fazer Login</a>
         </section>
 
         <section>
-            <p class="phrases" id="phrase3">Escreva a sua opinião sobre qualquer filme</p>
+            <div class="sectionInicio">
+                <p class="phrases" id="phraseBonus">Aqui você pode</p>
+                <img src="./src/images/seta-baixo.png" alt="seta" id="setaInicio" class="seta">
+            </div>
+            <p class="phrases" id="phrase3">Escrever a sua opinião sobre qualquer filme</p>
             <fieldset>
                 <legend>Notas sobre o filme</legend>
                 <p>Um filme atemporal, inesquecível e considerado um dos maiores de todos os tempos, sempre será lembrado. Inspirado em uma história real, a produção é profundamente comovente e cativante. O elenco é excepcional, com Leonardo DiCaprio se destacando em uma performance impecável e memorável, acompanhado pela brilhante atuação de Kate Winslet. Definitivamente, é uma obra que valeu a pena assistir.</p>
             </fieldset>
             <div class="sketch">
-                <img src="./src/images/seta-cima.png" alt="seta">
-                <p>pode ser editado da sua forma</p>
+                <img src="./src/images/seta-cima.png" alt="seta" class="seta">
+                <p id="text-left">exemplo de opinião que pode ser editada da sua forma!</p>
             </div>
         </section>
 
         <section>
             <p class="phrases" id="phrase4">Tenha em mãos o degistro de todos os filmes que já assistiu na vida</p>
+            <div class="sketch">
+                <p id="text-right">exemplo de filmes com notas dadas por você</p>
+                <img src="/src/images/seta-cima-invertida.png" alt="" id="seta-cima-invertida" class="seta">
+            </div>
             <div class="systemMovies">
                 <span>
-                    <img src="./src/images/BTF-movie-poster-star.jpg" alt="image1" id="left1">
+                    <img src="./src/images/BTF-movie-poster-star.jpg" alt="image1" id="left1" class="movieBottom">
                     <p class="movieName">De Volta Para o Futuro</p>
                     <p class="movieTime">0h00min</p>
                 </span>
 
                 <span>
-                    <img src="./src/images/CA-movie-poster-star.jpg" alt="image2" id="right1">
+                    <img src="./src/images/CA-movie-poster-star.jpg" alt="image2" id="right1" class="movieBottom">
                     <p class="movieName">Capitão America</p>
                     <p class="movieTime">0h00min</p>
                 </span>
 
                 <span>
-                    <img src="./src/images/HF-movie-poster-star.jpg" alt="image3" id="left2">
+                    <img src="./src/images/HF-movie-poster-star.jpg" alt="image3" id="left2" class="movieBottom">
                     <p class="movieName">Hidden Figures</p>
                     <p class="movieTime">0h00min</p>
                 </span>
 
                 <span>
-                    <img src="./src/images/HP-movie-poster-star.jpg" alt="image4" id="right2">
+                    <img src="./src/images/HP-movie-poster-star.jpg" alt="image4" id="right2" class="movieBottom">
                     <p class="movieName">Harry Potter</p>
                     <p class="movieTime">0h00min</p>
                 </span>
             </div>
 
-            <a href="#" class="buttons" id="subscribe2">CADASTRAR-SE AGORA</a>
+            <a href="/manutencao.html" class="buttons" id="subscribe2">CADASTRAR-SE AGORA</a>
         </section>
-
     </main>
     <footer>
+        
+        <a href="https://linkedin.com/in/jessica-sousa-vieira" target="_blank">
+            <img src="/src/images/linkedin-icon.png" alt="" class="footerIcons">
+        </a>
+        <a href="https://github.com/jessicasousav" target="_blank">
+            <img src="/src/images/gitgub-icon.png" alt="" class="footerIcons">
+        </a>
 
+        <p>&copy 2025 Moovy. Todos os direitos reservados à 
+            <a href="https://github.com/jessicasousav" target="_blank" id="link-portfolio">Jéssica de Sousa Vieira</a>.
+        </p>
+        <p>As imagens dos filmes contidos neste site foram obtidas em Google.com</p>
     </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 794) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+            // se no css o display do id itens (que é o menu) estiver como 'block', ele vai mudar para 'none', ou seja, quando ele estiver aparecendo e o usuário clicar, ele vai esconder.
+            // senão, ele muda de 'none' para 'block'. Ou seja, se ele não estiver aparecendo, ele vai aparecer quando clicar
+        }
+    </script>
 </body>
 </html>
