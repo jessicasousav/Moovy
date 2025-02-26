@@ -27,6 +27,7 @@ body {
     top: 61px;
     left: 30px;
     font-size: 2.8em;
+    cursor: pointer;
 }
 
 menu {
@@ -44,6 +45,7 @@ menu {
 
 menu ul {
     padding: 0px;
+    list-style-type: none;
 }
 
 menu a {
