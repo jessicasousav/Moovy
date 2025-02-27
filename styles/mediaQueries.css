@@ -30,6 +30,7 @@
     }
     
     menu {
+        display: block;
         border-radius: 0px;
         background-color: transparent;
         border-top: none;
