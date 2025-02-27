@@ -6,7 +6,7 @@
 
 - Acesse: https://jessicasousav.github.io/Moovy
 
-Moovy é uma aplicação full stack web, projetada pela estudante !.[Jéssica de Sousa Vieira].(https://linkedin.com/in/jessica-sousa-vieira) durante o seu 2º semestre da faculdade de ADS.
+Moovy é uma aplicação full stack web, projetada pela estudante ![Jéssica de Sousa Vieira](https://linkedin.com/in/jessica-sousa-vieira) durante o seu 2º semestre da faculdade de ADS.
 
 O Moovy foi idealizado para fins de registro e classificação de filmes assistidos pelo usuário. O qual poderá dar notas, descrever sua opinião, ver as notas dadas pelo IMDb por meio de uma API integrada ao projeto.
 
