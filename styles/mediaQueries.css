@@ -33,6 +33,7 @@
         display: none;
         border-radius: 0px;
         background-color: transparent;
+        border-top: none;
         width: 90vw;
         position: relative;
         z-index: 0;
@@ -64,10 +65,19 @@
         font-weight: 600;
     }
 
+    header .material-symbols-outlined {
+        display: none;
+    }
+
     #subscribeMenu {
         background-color: var(--pink);
         border-radius: 40px;
         padding: 10px 20px;
+    }
+
+    #subscribeMenu:hover {
+        background-color: #8b1f3c;
+        color: var(--white);
     }
 
     .phrases {
@@ -99,13 +109,5 @@
         height: 350px;
 
     }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-70px * 9));
-        }
-    }
 }
+

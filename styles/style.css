@@ -25,6 +25,21 @@ body {
     width: 90vw;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.3em;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--white);
+}
+
 #menuIcon {
     position: absolute;
     top: 61px;
@@ -35,15 +50,16 @@ body {
 
 menu {
     display: none;
-    border-radius: 15px;
+    border-top: 4px solid var(--pink);
+    border-radius: 0px 15px 15px 15px;
     background-color: var(--white);
-    width: 40vw;
+    width: 46vw;
     position: absolute;
     z-index: 2;
     left: 35px;
     top: 85px;
     font-size: 1.09em;
-    padding: 2px;
+    padding: 0px;
 }
 
 menu ul {
@@ -51,16 +67,21 @@ menu ul {
     list-style-type: none;
 }
 
-menu a {
-    display: block;
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    text-decoration: none;
-    background-color: var(--white);
     color: var(--dark-grey);
-    border-bottom: 2px solid rgb(185, 185, 185); /*colocando uma borda em cima de cada opção */
+}
+
+menu a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--dark-grey);
     }
 
-a:hover {
+a:hover, li:hover {
     color: var(--pink);
     cursor: pointer;
     font-weight: 600;
@@ -166,9 +187,9 @@ section {
 /* START scrolling images */
 .slider {
     margin: auto;
-    position: relative;
+    position: inherit;
     display: grid;
-    width: 90%;
+    width: 90vw;
     overflow: hidden;
     height: 230px;
 }
@@ -176,7 +197,7 @@ section {
 /*deixando as imagens lado a lado*/
 .slide-track{
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 
 @keyframes scroll {
@@ -184,7 +205,7 @@ section {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-136.9px * 9));
+        transform: translateX(calc(-30% - 79px));
     }
 }
 
@@ -201,23 +222,23 @@ img {
 
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, rgba(30,30,30, 1) 0%, rgba(255,255,255,0));
+    background: linear-gradient(to right, rgba(30,30,30, 1) 35%, rgba(255,255,255, 0) 100%);
     content: '';
-    height: 100%;
+    height: 250px;
     position: absolute;
-    width: 20%;
+    width: 30%;
     z-index: 2;
 }
 
 .slider::before {
     left: 0;
-    top: 0;
+    top: 295px;
 }
 
 .slider::after {
     right: 0;
-    top: 0;
-    transform: rotate(180deg);
+    top: 295px;
+    transform: rotateZ(180deg);
 }
 /* END scrolling images*/
 
@@ -235,7 +256,6 @@ fieldset p {
     font-size: 1.1em;
     text-align: justify;
     height: 7em;
-    
 }
 
 .sketch {
