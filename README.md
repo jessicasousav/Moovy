@@ -1,6 +1,6 @@
 # Moovy
  
-.[![NPM].(https://img.shields.io/npm/1/react)].(https://github.com/jessicasousav/Moovy/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/1/react)](https://github.com/jessicasousav/Moovy/blob/main/LICENSE)
 
 # Sobre o projeto
 
